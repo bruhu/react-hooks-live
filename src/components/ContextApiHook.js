@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 //create my Context
-const NumberContext = React.useContext();
+const NumberContext = React.createContext();
 
 //create my Provider
 export default function Context() {
@@ -15,5 +15,5 @@ export default function Context() {
 //use the Hook in the Consumer
 function Display() {
   const value = useContext(NumberContext);
-  return <div>whot</div>;
+  return <div>The answer is {value} to everything</div>;
 }
