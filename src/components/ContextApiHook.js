@@ -14,5 +14,6 @@ export default function Context() {
 
 //use the Hook in the Consumer
 function Display() {
+  const value = useContext(NumberContext);
   return <div>whot</div>;
 }
